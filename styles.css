@@ -53,14 +53,6 @@ a:hover {
     flex: 1 1 150px;
     min-width: 0;
 }
-#hero-text{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    font-size: 30px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px #000000;
-}
 #Hero img {
     border-radius: 30px;
 }
