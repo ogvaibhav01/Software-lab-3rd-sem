@@ -1,12 +1,13 @@
 body{
     display: flex;
     flex-direction: column;
-    background: linear-gradient(83deg,rgba(50, 19, 82, 1) 7%, rgba(22, 37, 54, 1) 51%, rgba(12, 89, 80, 1) 97%);
-    padding: 20px;
+    /* background: linear-gradient(83deg,rgba(50, 19, 82, 1) 7%, rgba(22, 37, 54, 1) 51%, rgba(12, 89, 80, 1) 97%); */
+    background-color: #121212;
     gap: 30px;
 }
 #first-section{
-    background: linear-gradient(83deg,rgba(50, 19, 82, 1) 7%, rgba(1, 3, 5, 0.76) 100%, rgba(12, 89, 80, 1) 97%);
+    /* background: linear-gradient(83deg,rgba(50, 19, 82, 1) 7%, rgba(1, 3, 5, 0.76) 100%, rgba(12, 89, 80, 1) 97%); */
+    background-color: #1E1E1E;
     display: flex;
     flex-direction: column;
     border-radius: 40px;
@@ -56,11 +57,34 @@ a:hover {
 #Hero img {
     border-radius: 30px;
 }
+#hero-text{
+    font-family: cursive;
+}
+#hero-para{
+    color: #B0B0B0;
+}
+#hero-text button{
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #0077ff;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+#hero-text button:hover{
+    background-color: #005fcc;
+    color:white;
+    transition: 0.5ms;
+    transform: scale(1.05);
+}
 /* Second section */
 #second-section{
     height: 400px;
     width:  auto;
-    background: linear-gradient(83deg,rgba(50, 19, 82, 1) 5%, rgba(50, 19, 82, 1) 7%, rgba(12, 89, 80, 0.92) 71%, rgba(0, 0, 0, 0.76) 100%);
+    background-color: #1E1E1E;
+    /* background: linear-gradient(83deg,rgba(50, 19, 82, 1) 5%, rgba(50, 19, 82, 1) 7%, rgba(12, 89, 80, 0.92) 71%, rgba(0, 0, 0, 0.76) 100%); */
     border: 1px solid white;
     border-radius: 40px;
     text-align: center;
@@ -78,18 +102,23 @@ a:hover {
     height: 200px;
     width: 150px;
     border-radius: 15px;
-    padding: 10px;
     margin-top: 10px;
+    border: 1px solid black;
 }
 .cards{
-    height:290px;
+    height:240px;
     width:200px;
     border-radius: 15px;
-    border: 1px solid white;
-    background: linear-gradient(83deg,rgba(50, 19, 82, 1) 5%, rgba(50, 19, 82, 1) 7%, rgba(10, 41, 43, 0.95) 51%, rgba(0, 0, 0, 0.76) 100%);}
-.cards:hover {
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px;
+    color: #121212;
+    /* background: linear-gradient(83deg,rgba(50, 19, 82, 1) 5%, rgba(50, 19, 82, 1) 7%, rgba(10, 41, 43, 0.95) 51%, rgba(0, 0, 0, 0.76) 100%);} */
+}
+    .cards:hover {
   background: linear-gradient(83deg,rgba(50, 19, 82, 1) 5%, rgba(50, 19, 82, 1) 7%, rgba(0, 0, 0, 0.92) 54%, rgba(0, 0, 0, 0.76) 100%);
   border-radius: 10px;
+  color: aliceblue;
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
@@ -97,7 +126,8 @@ a:hover {
 #third-section{
     height: 450px;
     width:  auto;
-    background: linear-gradient(83deg,rgba(50, 19, 82, 1) 7%, rgba(1, 3, 5, 0.76) 100%, rgba(12, 89, 80, 1) 97%);
+    background-color: #1E1E1E;
+    /* background: linear-gradient(83deg,rgba(50, 19, 82, 1) 7%, rgba(1, 3, 5, 0.76) 100%, rgba(12, 89, 80, 1) 97%); */
     border: 1px solid white;
     border-radius: 40px;
     text-align: center;
@@ -108,7 +138,7 @@ a:hover {
     gap: 10px;
 }
 #all-tables{
-    background: linear-gradient(83deg,rgba(46, 15, 77, 1) 15%, rgba(81, 23, 133, 1) 49%, rgba(26, 7, 36, 0.81) 82%);
+    /* background: linear-gradient(83deg,rgba(46, 15, 77, 1) 15%, rgba(81, 23, 133, 1) 49%, rgba(26, 7, 36, 0.81) 82%); */
     border-radius: 10px;    
     width: auto;
     padding: 20px;
@@ -121,12 +151,13 @@ a:hover {
     width: 400px;
     border-radius:12px;
     padding: 15px;
-    color: white;
-    background-color: #4D0080;
+    color: black;
+    background-color: #E0E0E0;
 }
 .products:hover {
   background: linear-gradient(83deg,rgba(50, 19, 82, 1) 5%, rgba(50, 19, 82, 1) 7%, rgba(0, 0, 0, 0.92) 54%, rgba(0, 0, 0, 0.76) 100%);
   border-radius: 10px;
+  color: white;
   transform: scale(1.05);
   transition: all 0.3s ease;
 }
