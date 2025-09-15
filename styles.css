@@ -44,6 +44,16 @@ a:hover {
   color: red; 
 }
 /* Hero */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 #Hero{
     color: white;;
     display:flex;
@@ -60,8 +70,16 @@ a:hover {
 #hero-text{
     font-family: cursive;
 }
+#hero-head{
+    animation: slideInLeft 1s ease-out forwards;
+}
 #hero-para{
     color: #B0B0B0;
+}
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.10); }
+  100% { transform: scale(1); }
 }
 #hero-text button{
     font-size: 20px;
@@ -72,6 +90,7 @@ a:hover {
     font-weight: bold;
     text-decoration: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: pulse 5s infinite;
 }
 #hero-text button:hover{
     background-color: #005fcc;
@@ -106,13 +125,14 @@ a:hover {
     border: 1px solid black;
 }
 .cards{
-    height:240px;
+    height:280px;
     width:200px;
     border-radius: 15px;
     border: 1px solid black;
     background-color: white;
     padding: 10px;
     color: #121212;
+    box-sizing: border-box;
     /* background: linear-gradient(83deg,rgba(50, 19, 82, 1) 5%, rgba(50, 19, 82, 1) 7%, rgba(10, 41, 43, 0.95) 51%, rgba(0, 0, 0, 0.76) 100%);} */
 }
     .cards:hover {
